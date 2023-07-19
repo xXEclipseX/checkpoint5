@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@300&display=swap');
+
+*{
+    margin: 0 auto;
+}
+.logo{
+    width: 268px;
+    height: 33px;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+}
+.drop_down{
+    display: none;
+    position: absolute;
+    right: 190px;
+    padding: 5px;
+    box-shadow: 0 2px 2px 2px gainsboro;
+}
+.menu{
+    display: flex;
+}
+.menu_item{
+    list-style: none;
+    margin-right: 15px;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 15px;
+    color: #ababab;
+    cursor: pointer;
+}
+.menu_item:hover{
+    color: #00b39b;
+    
+}
+.menu_item:hover .drop_down{
+    display: flex;
+    flex-direction: column;
+}
+.drop_down_item{
+    list-style: none;
+    padding: 5px;
+    color:#ababab;
+    text-align: start;
+    width: 100%;
+    font-family: Roboto,arial,sans-serif;
+    padding: 10px;
+    background-color: #ffffff;
+}
+.drop_down_item:hover{
+    color: #00b39b;
+    background-color: #F6F8F8;
+}
+.intro{
+    padding: 100px;
+    text-align: center;
+}
+.intro h1{
+    margin: 30px;
+    letter-spacing: -0.3px;
+    line-height: 44.2px;
+}
+.intro_line{
+    color: #00b39b;
+    font-family: Work Sans,arial,sans-serif;
+    font-weight: 300;
+    font-size: 34px;
+}
+.paragraphs{
+    display: flex;
+    color: #747474;
+    font-family: Robot,arial,sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    width: 85%;
+    text-align: left;
+}
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+    box-sizing: border-box;
+    max-width: 1015px;
+    margin: 0 auto;
+}
+.patients_logo{
+    margin: 0 0 -6px 0;
+    width: 24px;
+    height: 24px;
+    max-width: 100%;
+}
+.for_patients{
+    background-color: #00ccb1;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 22px 40px 0;
+    box-sizing: border-box;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    /* padding: 32px 32px 0 32px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 100px;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 16px;
+    line-height: 20.8px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 311px;
+    height:335px; */
+}
+.for_patients_txt{
+    font-family: Work Sans,arial,sans-serif;
+    font-size: 26px;
+    letter-spacing: -0.3px;
+    line-height: 33.8px;
+    word-spacing: 0px;
+    margin: 8px 0 8px 0;
+    color: #ffffff;
+    font-weight: 700;
+    display: block;
+    width: 247px;
+    height: 33px;
+}
+.for_patients_content{
+    font-family: Work Sans,arial,sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -0.3px;
+    line-height: 28.8px;
+    margin: 8px 0 8px;
+    color: #ffffff;
+    width: 247px;
+    height: 86px;
+    display: block;
+    word-spacing: 0px;
+    margin-bottom: 120px;
+
+}
+select {
+    color: white;
+    text-decoration: underline;
+    min-height: 10px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: max-content;
+    padding: 0 38px 0 8px;
+    font-weight: 600;
+    font-family: roboto,arial,sans-serif;
+    margin-right: 170px;
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+    font-size: 19px;
+    line-height: 24px;
+
+}
+.contry_selection{
+    display: flex;
+    align-items: flex-start;
+    width: 250px;
+    height:80px;
+    min-height: 0px;
+}
+.selection_option{
+    color: black
+}
+.box_doctors{
+    width: 331.631px;
+    height: 365px;
+    padding: 10px 10px 10px 10px;
+    min-height: 1px;
+    float: left;
+    display: block;
+    line-height: 20.8px;
+    
+}
+.doctors_logo{
+    width: 24px;
+    height: 24px;
+    max-width: 100%;
+    display: inline;
+    overflow: clip;
+    margin: 0 0 -6px 0;
+}
+.for_doctors{
+    background-color: #3d83df;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 22px 40px 0;
+    box-sizing: border-box;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    /* padding: 32px 32px 0 32px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 100px;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 16px;
+    line-height: 20.8px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 310px;
+    height: 335px;
+    margin: 0 -193px 0 150px; */
+}
+.for_doctors_txt{
+    font-family: Work Sans,arial,sans-serif;
+    font-size: 26px;
+    letter-spacing: -0.3px;
+    line-height: 33.8px;
+    word-spacing: 0px;
+    margin: 8px 0 8px 0;
+    color: #ffffff;
+    font-weight: 700;
+    display: block;
+    width: 247px;
+    height: 33px;
+}
+.for_doctors_content{
+    font-family: Work Sans,arial,sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -0.3px;
+    line-height: 28.8px;
+    margin: 8px 0 8px;
+    color: #ffffff;
+    width: 247px;
+    height: 86px;
+    display: block;
+    word-spacing: 0px;
+    margin-bottom: 120px;
+
+}
+select {
+    color: white;
+    text-decoration: underline;
+    min-height: 10px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: max-content;
+    padding: 0 38px 0 8px;
+    font-weight: 600;
+    font-family: roboto,arial,sans-serif;
+    margin-right: 170px;
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+    font-size: 19px;
+    line-height: 24px;
+}
+.contry_selection_2{
+    display: flex;
+    align-items: flex-start;
+    width: 250px;
+    height:80px;
+    min-height: 0px;
+}
+.selection_option_2{
+    color: black
+}
+.clinics_logo{
+    width: 24px;
+    height: 24px;
+    max-width: 100%;
+    display: inline;
+    overflow: clip;
+    margin: 0 0 -6px 0;
+}
+.for_clinics{
+    background-color: #1b2734;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 22px 40px 0;
+    box-sizing: border-box;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    /* width: 345px;
+    height: 311px.625;
+    padding: 32px 32px 0 32px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 280px;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 16px;
+    line-height: 20.8px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+    width: 311px;
+    height: 335px;
+    margin: 0 -193px 0 150px; */
+}
+.for_clinics_txt{
+    font-family: Work Sans,arial,sans-serif;
+    font-size: 26px;
+    letter-spacing: -0.3px;
+    line-height: 33.8px;
+    word-spacing: 0px;
+    margin: 8px 0 8px 0;
+    color: #ffffff;
+    font-weight: 700;
+    display: block;
+    width: 247px;
+    height: 33px;
+}
+.for_clinics_content{
+    font-family: Work Sans,arial,sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -0.3px;
+    line-height: 28.8px;
+    margin: 8px 0 8px;
+    color: #ffffff;
+    width: 247px;
+    height: 86px;
+    display: block;
+    word-spacing: 0px;
+    margin-bottom: 120px;
+
+}
